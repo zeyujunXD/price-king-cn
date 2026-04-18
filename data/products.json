@@ -1,0 +1,58 @@
+[
+  {
+    "name": "盒马鲜生·阳光玫瑰葡萄",
+    "category": "生鲜",
+    "hint": "一盒家庭装，夏天卖得很快。",
+    "price": 39.9,
+    "image": "https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "山姆·瑞士卷 2盒装",
+    "category": "烘焙",
+    "hint": "常被当作聚会甜点，很多人会顺手加购。",
+    "price": 68,
+    "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "华为 MatePad 11.5",
+    "category": "数码",
+    "hint": "适合上网课，也常被拿来追剧。",
+    "price": 2299,
+    "image": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "小米 65 英寸电视",
+    "category": "家电",
+    "hint": "大多数人装修新家时会认真比价。",
+    "price": 3199,
+    "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "好利来半熟芝士",
+    "category": "零食",
+    "hint": "经常出现在下午茶和送礼清单里。",
+    "price": 58,
+    "image": "https://images.unsplash.com/photo-1562440499-64c9a111f713?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "飞书专业版年费",
+    "category": "办公",
+    "hint": "你会在团队协作工具里见到它。",
+    "price": 588,
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "瑞幸生椰拿铁 大杯",
+    "category": "饮品",
+    "hint": "打工人补能量时经常会下单。",
+    "price": 19,
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+  },
+  {
+    "name": "优衣库轻型羽绒服",
+    "category": "服饰",
+    "hint": "换季时常常会被挂在橱窗最显眼的位置。",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=80"
+  }
+]
