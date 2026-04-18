@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>谁是价格王</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">中文版猜价格游戏</p>
+          <h1>谁是价格王</h1>
+          <p class="subcopy">猜中日常商品的真实价格，越准越上头。</p>
+        </div>
+        <div class="stats">
+          <div><span>当前分数</span><strong id="score">0</strong></div>
+          <div><span>连击</span><strong id="streak">0</strong></div>
+          <div><span>今日局数</span><strong id="rounds">0/10</strong></div>
+        </div>
+      </section>
+
+      <section class="game">
+        <div class="card product-card">
+          <div class="tag-row">
+            <span class="tag" id="categoryTag">日常好物</span>
+            <span class="tag muted" id="difficultyTag">新手局</span>
+          </div>
+          <div class="image-frame">
+            <img id="productImage" alt="商品图" />
+          </div>
+          <h2 id="productName"></h2>
+          <p id="productHint" class="hint"></p>
+        </div>
+
+        <div class="card controls-card">
+          <label for="guess">你觉得多少钱？</label>
+          <div class="input-row">
+            <input id="guess" type="number" min="0" placeholder="输入你的猜测（元）" />
+            <button id="submitBtn">提交</button>
+          </div>
+          <div class="quick-picks" id="quickPicks"></div>
+          <div class="result" id="result"></div>
+          <div class="actions">
+            <button class="ghost" id="skipBtn">换一个</button>
+            <button class="ghost" id="dailyBtn">今日挑战</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card feed-card">
+        <div class="feed-head">
+          <h3>本局记录</h3>
+          <button class="ghost small" id="resetBtn">重开</button>
+        </div>
+        <ul id="log" class="log"></ul>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
