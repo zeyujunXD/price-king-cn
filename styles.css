@@ -1,0 +1,190 @@
+:root {
+  color-scheme: light;
+  --bg: #f4efe7;
+  --bg-2: #fff7ea;
+  --card: rgba(255, 255, 255, 0.72);
+  --text: #1f1a17;
+  --muted: #6f645c;
+  --accent: #db6b2b;
+  --accent-2: #1f8a70;
+  --line: rgba(60, 44, 34, 0.12);
+  --shadow: 0 28px 80px rgba(90, 57, 25, 0.18);
+  --radius: 24px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  font-family: "Microsoft YaHei UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(219, 107, 43, 0.25), transparent 35%),
+    radial-gradient(circle at right, rgba(31, 138, 112, 0.16), transparent 30%),
+    linear-gradient(180deg, var(--bg-2), var(--bg));
+}
+
+.shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+.hero, .game, .feed-head, .tag-row, .stats, .input-row, .actions {
+  display: flex;
+  gap: 16px;
+}
+
+.hero {
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 0.95;
+}
+
+.subcopy {
+  margin: 12px 0 0;
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+.stats > div, .card {
+  border: 1px solid var(--line);
+  background: var(--card);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+}
+
+.stats {
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.stats > div {
+  min-width: 110px;
+  padding: 14px 16px;
+  border-radius: 18px;
+}
+.stats span { display: block; color: var(--muted); font-size: 13px; }
+.stats strong { display: block; font-size: 28px; margin-top: 4px; }
+
+.game {
+  align-items: stretch;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.product-card { flex: 1 1 360px; }
+.controls-card { flex: 0 1 420px; display: flex; flex-direction: column; justify-content: center; }
+.feed-card { padding-bottom: 10px; }
+
+.tag-row { margin-bottom: 12px; flex-wrap: wrap; }
+.tag {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(219, 107, 43, .12);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+}
+.tag.muted { background: rgba(31, 138, 112, .12); color: var(--accent-2); }
+
+.image-frame {
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fff, #f2e2c6);
+}
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h2 { margin: 16px 0 8px; font-size: 28px; }
+.hint { margin: 0; color: var(--muted); }
+
+label { font-weight: 700; margin-bottom: 10px; display: block; }
+.input-row { flex-wrap: wrap; }
+input {
+  flex: 1 1 220px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-size: 16px;
+  background: rgba(255,255,255,.8);
+}
+button {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, var(--accent), #f08b3e);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+button.ghost {
+  background: rgba(255,255,255,.75);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+button.small { padding: 10px 14px; border-radius: 12px; }
+
+.quick-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+.quick-picks button { padding: 10px 12px; font-size: 13px; }
+
+.result {
+  min-height: 72px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(31, 138, 112, .08);
+  color: #174d40;
+  white-space: pre-line;
+}
+
+.actions { margin-top: 14px; flex-wrap: wrap; }
+
+.feed-card { margin-top: 20px; }
+.feed-head { justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.feed-head h3 { margin: 0; }
+.log { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.log li {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .66);
+  border: 1px solid var(--line);
+}
+.log .good { color: #17624f; }
+.log .bad { color: #9c3b20; }
+
+@media (max-width: 720px) {
+  .hero { flex-direction: column; align-items: start; }
+  .stats { width: 100%; justify-content: start; }
+  .card { padding: 18px; }
+  h2 { font-size: 24px; }
+}
